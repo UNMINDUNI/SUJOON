@@ -139,7 +139,7 @@ export default function NaverProfile({ onInstagramClick }: NaverProfileProps) {
                           className="relative p-2.5 rounded-full bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white hover:shadow-md cursor-pointer flex items-center gap-2 font-bold text-xs"
                         >
                           <Instagram className="w-4 h-4" />
-                          <span>가상 인스타그램 이동</span>
+                          <span>서준 인스타그램 이동</span>
                           
                           {/* Pulsing indicator ring to guide action */}
                           <span className="absolute -top-1 -right-1 flex h-3 w-3">
