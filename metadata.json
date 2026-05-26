@@ -1,0 +1,6 @@
+{
+  "name": "인물정보 & 위키 강서준",
+  "description": "배우 강서준의 네이버 인물정보, 나무위키, 가상 비밀 인스타그램 동거 연애 시물레이터",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
