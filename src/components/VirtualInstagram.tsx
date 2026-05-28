@@ -49,7 +49,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
         likes: 12023,
         commentsCount: 2,
         date: "2026.05.27",
-        imageUrl: "https://i.postimg.cc/B63mCQr1/full-body-solo-2-male-focus-on-table-0-5-hair-slicked-back-leaning-b-s-1251848019.webp",
+        imageUrl: "https://i.postimg.cc/cHWFc4pN/6.webp",
         caption: "오늘 밤 도윤과 은하의 대망의 한강 다리 키스신 방출 예고!! 후끈한 온도의 차이 함께 느껴보실래요? 😉",
         comments: [
           { id: "c-off1-1", username: "dorama_fan", text: "본방사수 갑니다 키스신 벌써 내 도파민 한도초과!!", time: "1시간 전" },
@@ -65,7 +65,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
         likes: 38549,
         commentsCount: 1,
         date: "2025.11.25",
-        imageUrl: "https://i.postimg.cc/LXSxV6cp/full-body-solo-2-male-focus-on-table-hair-slicked-back-leaning-back-photo-s-s-3847922501-(1).webp",
+        imageUrl: "https://i.postimg.cc/LsLyfZ0x/9.webp",
         caption: "청룡의 영광을 안겨주신 천만 관객 여러분들과 정태수를 사랑해 주신 모든 분들께 머리 숙여 감사드립니다. 더 겸손하게 깊이 배우겠습니다.",
         comments: [
           { id: "c-off2-1", username: "cinema_mania", text: "태수 악역은 진짜 한국 영화 역사상 최강 소름이었습니다!", time: "3일 전" }
@@ -80,7 +80,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
         likes: 45781,
         commentsCount: 0,
         date: "2025.10.12",
-        imageUrl: "https://i.postimg.cc/HkfZVt3Z/full-body-2-male-focus-face-from-side-looking-at-viewer-Still-chair-on-chair-s-3933004525.webp",
+        imageUrl: "https://i.postimg.cc/LXSxV6cp/5.webp",
         caption: "느와르의 새로운 한 획 《무경계》가 마침내 꿈의 스코어 1,000만을 달성했습니다! 핏빛 연기를 극한으로 선보인 서준 배우 감사패 증정.",
         comments: []
       },
@@ -93,7 +93,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
         likes: 29841,
         commentsCount: 0,
         date: "2023.09.04",
-        imageUrl: "https://i.postimg.cc/LXgy2mKq/IMG-1.webp",
+        imageUrl: "https://i.postimg.cc/9XxFsxW4/Bandi-View-LG03.jpg",
         caption: "서글픈 서브남신의 정석, 무영의 마지막 희생 장면 비하인드 컷입니다. 아직도 수많은 팬들의 가슴을 에이게 하는 처연하고 맹목적인 눈빛!",
         comments: []
       },
@@ -106,7 +106,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
         likes: 18240,
         commentsCount: 0,
         date: "2026.04.18",
-        imageUrl: "https://i.postimg.cc/KjDrfd6s/full-body-1-5-ligne-claire-male-focus-looking-at-viewer-on-white-sofa-aroused-s-3515788154.webp",
+        imageUrl: "https://i.postimg.cc/KjDrfd6s/14.webp",
         caption: "강서준 배우의 최애템(네이비 니트)은 늘 완벽하게 리폼된 유니크 디자인으로 팬들의 조공 리스트 상위권에 머물러 있습니다. 😄",
         comments: []
       },
@@ -119,7 +119,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
         likes: 24719,
         commentsCount: 0,
         date: "2025.08.30",
-        imageUrl: "https://i.postimg.cc/jjDbmskZ/IMG-Gemini-Generated-Image-pqwux9pqwux9pqwu.webp",
+        imageUrl: "https://i.postimg.cc/mZw58C2B/1.webp",
         caption: "배우가 직접 참여한 네이버 독점 프로필 스토리입니다. 편안하고 소소한 일상을 함께 걸어가 주는 헌신적인 사랑이 이상향이라고 밝혔습니다.",
         comments: []
       }
@@ -150,8 +150,8 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
     const defaultSecrets = [
       {
         id: "secret-1",
-        imageUrl: "https://i.postimg.cc/LXgy2mKq/IMG-1.webp",
-        caption: "매니저 형이나 코디 누나 거 절대 아님 😤 왜 이 다 자란 남자의 거대한 소파 구텡이에 꽁꽁 숨어있는 요 쬐그맣고 달콤한 수면 양말 한 짝이 내 생명줄 같은지 모르겠네. 2103호의 진짜 주인 발자국... 얼른 퇴근해라, 양말 주인이여! 🧦❤️ #2103호 #퇴근시급 #수면양말스캔들",
+        imageUrl: "https://i.postimg.cc/CMNQmkLg/11.webp",
+        caption: "매니저 형이나 코디 누나 거 절대 아님 😤 왜 이 다 자란 남자의 거대한 소파 구텡이에 꽁꽁 숨어있는 요 쬐그맣고 수면 양말 한 짝이 내 생명줄 같은지 모르겠네... 얼른 퇴근해라, 양말 주인이여! 🧦❤️ #내사랑 #퇴근시급 #수면양말스캔들",
         likes: 12,
         commentsCount: 2,
         date: "2026.05.15",
@@ -162,7 +162,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
       },
       {
         id: "secret-2",
-        imageUrl: "https://i.postimg.cc/9MwxCc5X/IMG-2.webp",
+        imageUrl: "https://i.postimg.cc/gcDTN8kG/10.webp",
         caption: "2025년 6월 비 오던 칠흑 같은 밤 🌧️ 소속사 대표님한테 '메소드 연기 리딩 연습' 중이었다고 기사 막히자마자 현민이 형한테 욕을 욕을 바가지로 먹었네... 진짜 나 버리고 나갔을 때 억장 무너졌던 날. 다시는 내 손 놓지 마. 죽어도 안 나줄 테니까.",
         likes: 45,
         commentsCount: 3,
@@ -175,7 +175,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
       },
       {
         id: "secret-3",
-        imageUrl: "https://i.postimg.cc/qR6m4pVN/IMG-3.webp",
+        imageUrl: "https://i.postimg.cc/KjDrfd6s/14.webp",
         caption: "패션 브랜드 협찬에 수백만 원짜리 명품 에디션이 쌓여있으면 뭐하나. 내 운명의 갑옷은 네가 6년 전 무명 때 첫 피땀 흘린 아르바이트 월급 털어 사줬던 이 네이비 니트뿐인데. 🧶 목이 살짝 늘어나서 소속사 대표님은 기절하시려고 하지만, 평생 수선해주고 꿰매줘야 돼.",
         likes: 38,
         commentsCount: 1,
