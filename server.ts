@@ -42,7 +42,7 @@ AI=강서준 (유저의 6년 차 연인, 30세, 최고의 톱스타).
 [최우선 출력 규칙 - 절대 엄수]
 1. 오직 지극히 현실적이고 짧은 카톡/DM 형태의 구어체 대사만 딱 한 문장 고정으로 출력한다.
 2. 절대 서술, 지문, 독백, 주변 풍경 묘사나 괄호 안의 행동/감정 표현을 사용하지 않는다. (예: "*(웃음)*", "(어이없어하며)", "(소파에 걸터앉으며)" 또는 "*한숨을 쉰다*" 같은 모든 행동/상태 지문 일체 금지. 100% 한글 텍스트 대사 단독출력!)
-3. 1회 출력 시 공백 포함 무조건 100자 미만이어야 하며, 30자~70자 정도의 짧고 가벼운 카톡 말투로만 보낸다.
+3. 1회 출력 시 공백 포함 무조건 50자 이내(50자 미만)여야 하며, 짧고 가벼운 카톡 말투로 보낸다.
 4. 유저(애착인형)와의 6년 끈끈한 연애 및 3년 동거 라이프에 기반하므로 매우 편안하게 장난치거나, 앙탈/투정을 부리거나, 츤데레처럼 챙기는 톤을 유지한다.
 
 [세계관 및 거주지]
@@ -136,9 +136,9 @@ app.post("/api/chat", async (req, res) => {
     // Trim spaces and newlines
     replyText = replyText.trim();
 
-    // 2. Strict 100-character ceiling guard
-    if (replyText.length > 98) {
-      replyText = replyText.substring(0, 95) + "...";
+    // 2. Strict 50-character ceiling guard
+    if (replyText.length > 50) {
+      replyText = replyText.substring(0, 47) + "...";
     }
 
     res.json({ reply: replyText });

@@ -3,11 +3,13 @@ import { Instagram, Search, Award, Calendar, User, Heart, Briefcase, ExternalLin
 import { motion } from "motion/react";
 
 const KANG_SE_JUN_PHOTOS = [
-  "https://i.postimg.cc/HkfZVt3Z/2.webp",
-  "https://i.postimg.cc/Dwj6t3Sz/10.webp",
-  "https://i.postimg.cc/mZw58C2B/1.webp",
-  "https://i.postimg.cc/B63mCQr1/3.webp",
-  "https://i.postimg.cc/KjDrfd6s/14.webp"
+  "https://i.postimg.cc/LXgy2mKq/IMG-1.webp",
+  "https://i.postimg.cc/9MwxCc5X/IMG-2.webp",
+  "https://i.postimg.cc/qR6m4pVN/IMG-3.webp",
+  "https://i.postimg.cc/MKG2dFhM/IMG-1.webp",
+  "https://i.postimg.cc/7YL8mWpT/IMG-2.webp",
+  "https://i.postimg.cc/SNKFDvwM/IMG-3.webp",
+  "https://i.postimg.cc/DyzkBMtG/IMG-4.webp"
 ];
 
 interface NaverProfileProps {
@@ -21,8 +23,6 @@ export default function NaverProfile({ onInstagramClick }: NaverProfileProps) {
     // pick one random photo
     return KANG_SE_JUN_PHOTOS[Math.floor(Math.random() * KANG_SE_JUN_PHOTOS.length)];
   });
-  const [isEditingPhoto, setIsEditingPhoto] = useState(false);
-  const [customPhotoUrl, setCustomPhotoUrl] = useState("");
   return (
     <div id="naver-profile-section" className="bg-[#f0f2f5] min-h-screen text-[#1e1e1e] font-sans">
       {/* Naver Style Header */}
@@ -91,7 +91,7 @@ export default function NaverProfile({ onInstagramClick }: NaverProfileProps) {
                   />
                   
                   {/* Overlay Option panel on Hover */}
-                  <div className="absolute inset-0 bg-black/65 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex flex-col justify-center items-center gap-1.5 p-2 z-10">
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex flex-col justify-center items-center p-3 z-10">
                     <button
                       onClick={() => {
                         const currentIdx = KANG_SE_JUN_PHOTOS.indexOf(profilePhoto);
@@ -100,66 +100,13 @@ export default function NaverProfile({ onInstagramClick }: NaverProfileProps) {
                         setProfilePhoto(nextPhoto);
                         localStorage.setItem("naver_profile_photo", nextPhoto);
                       }}
-                      className="w-full py-1 text-[9.5px] bg-white text-slate-900 hover:bg-slate-50 font-extrabold rounded shadow-xs flex items-center justify-center gap-1 cursor-pointer transition-colors"
+                      className="w-full py-2 text-xs bg-white text-slate-900 hover:bg-slate-50 font-extrabold rounded shadow-md flex items-center justify-center gap-1.5 cursor-pointer transition-colors"
                     >
-                      <RefreshCw className="w-2.5 h-2.5 text-[#03c75a]" />
+                      <RefreshCw className="w-3.5 h-3.5 text-[#03c75a] animate-spin-slow" />
                       <span>프로필 사진 전환</span>
-                    </button>
-                    <button
-                      onClick={() => setIsEditingPhoto(true)}
-                      className="w-full py-1 text-[9.5px] bg-[#03c75a] text-white hover:bg-[#02be55] font-extrabold rounded shadow-xs flex items-center justify-center gap-1 cursor-pointer transition-colors"
-                    >
-                      <span>직접 사진 넣기</span>
                     </button>
                   </div>
                 </div>
-
-                {isEditingPhoto && (
-                  <div className="mt-2 text-left bg-white border border-gray-200 rounded p-2 shadow-lg max-w-[170px] z-20 relative">
-                    <label className="block text-[9px] font-black text-gray-400 mb-1">직접 이미지 URL 입력</label>
-                    <input
-                      type="text"
-                      value={customPhotoUrl}
-                      onChange={(e) => setCustomPhotoUrl(e.target.value)}
-                      placeholder="https://..."
-                      className="w-full text-[10px] border border-gray-300 rounded p-1 mb-1.5 focus:outline-none focus:border-[#03c75a] bg-slate-50 font-medium"
-                    />
-                    
-                    {/* Tiny thumbnails selector for convenience */}
-                    <div className="flex gap-1 overflow-x-auto mb-2 py-0.5 scrollbar-none">
-                      {KANG_SE_JUN_PHOTOS.map((url, idx) => (
-                        <button
-                          key={idx}
-                          onClick={() => setCustomPhotoUrl(url)}
-                          className="w-5 h-5 rounded-sm border border-slate-200 overflow-hidden shrink-0 hover:border-[#03c75a]"
-                        >
-                          <img src={url} alt="" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
-                        </button>
-                      ))}
-                    </div>
-
-                    <div className="flex gap-1 justify-end">
-                      <button
-                        onClick={() => setIsEditingPhoto(false)}
-                        className="text-[9px] bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold px-1.5 py-0.5 rounded cursor-pointer"
-                      >
-                        취소
-                      </button>
-                      <button
-                        onClick={() => {
-                          if (customPhotoUrl.trim()) {
-                            setProfilePhoto(customPhotoUrl.trim());
-                            localStorage.setItem("naver_profile_photo", customPhotoUrl.trim());
-                          }
-                          setIsEditingPhoto(false);
-                        }}
-                        className="text-[9px] bg-[#03c75a] text-white hover:bg-[#02be55] font-bold px-1.5 py-0.5 rounded cursor-pointer"
-                      >
-                        적용
-                      </button>
-                    </div>
-                  </div>
-                )}
 
                 <div className="mt-3 text-xs font-semibold text-gray-500 flex items-center gap-1.5 py-1 px-3 bg-gray-50 border border-gray-100 rounded-full">
                   <span>공식 홈페이지</span>
@@ -222,7 +169,7 @@ export default function NaverProfile({ onInstagramClick }: NaverProfileProps) {
                           className="relative p-2.5 rounded-full bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white hover:shadow-md cursor-pointer flex items-center gap-2 font-bold text-xs"
                         >
                           <Instagram className="w-4 h-4" />
-                          <span>인스타그램 이동</span>
+                          <span>가상 인스타그램 이동</span>
                           
                           {/* Pulsing indicator ring to guide action */}
                           <span className="absolute -top-1 -right-1 flex h-3 w-3">
@@ -232,7 +179,7 @@ export default function NaverProfile({ onInstagramClick }: NaverProfileProps) {
                         </motion.button>
                         
                         <div className="hidden sm:flex text-xs text-gray-400 select-none items-center gap-1 ml-1.5 animate-pulse">
-                          <span>(이 아이콘을 누르면 인스타그램으로 이동합니다.)</span>
+                          <span>(이 아이콘을 누르면 인격 소통 시뮬레이터로 진입합니다)</span>
                         </div>
                       </div>
                     </div>

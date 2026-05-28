@@ -25,7 +25,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
     {
       id: "welcome-1",
       role: "model",
-      text: "어 연락 왔네! 촬영 없는 날 집에서 뒹굴거리려니까 좀이 쑤신다. 맛있는 거 시켜 먹을까? 이따 올 때 시원한 캔맥주 하나만 사와!",
+      text: "연락 기다렸어! 얼른 2103호로 와라. 올 때 시원한 캔맥주 사오구! 🍻",
       timestamp: new Date().toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" }),
     }
   ]);
@@ -36,97 +36,97 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
   // States to allow pasting or choosing new feed images
   const [editingPostId, setEditingPostId] = useState<string | null>(null);
   const [editImageUrlInput, setEditImageUrlInput] = useState<string>("");
-  
+
   // Official dynamic feed entries with real WebP photos
   const [officialPosts, setOfficialPosts] = useState<SecretPost[]>(() => {
     const defaultOfficial = [
-      {
-        id: "off-1",
-        category: "현재 방영",
-        title: "SBS 드라마 《연애의 온도차》",
-        subtitle: '"차도윤 본부장역 강서준 배우 스틸컷 대공개"',
-        badge: "매주 수목 밤 10시 본방사수!",
-        likes: 12023,
-        commentsCount: 2,
-        date: "2026.05.27",
-        imageUrl: "https://i.postimg.cc/cHWFc4pN/6.webp",
-        caption: "오늘 밤 도윤과 은하의 대망의 한강 다리 키스신 방출 예고!! 후끈한 온도의 차이 함께 느껴보실래요? 😉",
-        comments: [
-          { id: "c-off1-1", username: "dorama_fan", text: "본방사수 갑니다 키스신 벌써 내 도파민 한도초과!!", time: "1시간 전" },
-          { id: "c-off1-2", username: "hs_love", text: "서준 최고 존엄 강서준 꽃길만 걷자아아", time: "30분 전" }
-        ]
-      },
-      {
-        id: "off-2",
-        category: "남우주연상 수상",
-        title: "제46회 청룡영화상 남우주연상",
-        subtitle: '영화 《무경계》 (정태수 역)',
-        badge: "최고의 연기 찬사",
-        likes: 38549,
-        commentsCount: 1,
-        date: "2025.11.25",
-        imageUrl: "https://i.postimg.cc/LsLyfZ0x/9.webp",
-        caption: "청룡의 영광을 안겨주신 천만 관객 여러분들과 정태수를 사랑해 주신 모든 분들께 머리 숙여 감사드립니다. 더 겸손하게 깊이 배우겠습니다.",
-        comments: [
-          { id: "c-off2-1", username: "cinema_mania", text: "태수 악역은 진짜 한국 영화 역사상 최강 소름이었습니다!", time: "3일 전" }
-        ]
-      },
-      {
-        id: "off-3",
-        category: "천만 돌파",
-        title: "영화 《무경계》 (無境界)",
-        subtitle: "정태수 역 핏빛 독전 스틸컷",
-        badge: "천만 관객 신화",
-        likes: 45781,
-        commentsCount: 0,
-        date: "2025.10.12",
-        imageUrl: "https://i.postimg.cc/LXSxV6cp/5.webp",
-        caption: "느와르의 새로운 한 획 《무경계》가 마침내 꿈의 스코어 1,000만을 달성했습니다! 핏빛 연기를 극한으로 선보인 서준 배우 감사패 증정.",
-        comments: []
-      },
-      {
-        id: "off-4",
-        category: "드라마 명작",
-        title: "tvN 드라마 《붉은 달, 그림자》",
-        subtitle: '"서브 영웅, 호위무사 무영"',
-        badge: "신드롬 급 서브남주",
-        likes: 29841,
-        commentsCount: 0,
-        date: "2023.09.04",
-        imageUrl: "https://i.postimg.cc/9XxFsxW4/Bandi-View-LG03.jpg",
-        caption: "서글픈 서브남신의 정석, 무영의 마지막 희생 장면 비하인드 컷입니다. 아직도 수많은 팬들의 가슴을 에이게 하는 처연하고 맹목적인 눈빛!",
-        comments: []
-      },
-      {
-        id: "off-5",
-        category: "뉴스컷 리포트",
-        title: '"늘어난 네이비 니트 스캔들?!"',
-        subtitle: "소속사 측 '강서준의 오랜 애착템일 뿐, 과도한 추측 자제'",
-        badge: "이상형의 재발견",
-        likes: 18240,
-        commentsCount: 0,
-        date: "2026.04.18",
-        imageUrl: "https://i.postimg.cc/KjDrfd6s/14.webp",
-        caption: "강서준 배우의 최애템(네이비 니트)은 늘 완벽하게 리폼된 유니크 디자인으로 팬들의 조공 리스트 상위권에 머물러 있습니다. 😄",
-        comments: []
-      },
-      {
-        id: "off-6",
-        category: "네이버 독점 인터뷰",
-        title: "“츄리닝에 한강 캔맥주가 완벽한 내 이상형”",
-        subtitle: "강서준 친서민 소탈 발언",
-        badge: "이상형 공개 화제",
-        likes: 24719,
-        commentsCount: 0,
-        date: "2025.08.30",
-        imageUrl: "https://i.postimg.cc/mZw58C2B/1.webp",
-        caption: "배우가 직접 참여한 네이버 독점 프로필 스토리입니다. 편안하고 소소한 일상을 함께 걸어가 주는 헌신적인 사랑이 이상향이라고 밝혔습니다.",
-        comments: []
-      }
-    ];
+    {
+      id: "off-1",
+      category: "현재 방영",
+      title: "SBS 드라마 《연애의 온도차》",
+      subtitle: '"차도윤 본부장역 강서준 배우 스틸컷 대공개"',
+      badge: "매주 수목 밤 10시 본방사수!",
+      likes: 12023,
+      commentsCount: 2,
+      date: "2026.05.27",
+      imageUrl: "https://i.postimg.cc/XJWsg7Tm/8.webp",
+      caption: "오늘 밤 도윤과 은하의 대망의 한강 다리 키스신 방출 예고!! 후끈한 온도의 차이 함께 느껴보실래요? 😉",
+      comments: [
+        { id: "c-off1-1", username: "dorama_fan", text: "본방사수 갑니다 키스신 벌써 내 도파민 한도초과!!", time: "1시간 전" },
+        { id: "c-off1-2", username: "hs_love", text: "서준 최고 존엄 강서준 꽃길만 걷자아아", time: "30분 전" }
+      ]
+    },
+    {
+      id: "off-2",
+      category: "남우주연상 수상",
+      title: "제46회 청룡영화상 남우주연상",
+      subtitle: '영화 《무경계》 (정태수 역)',
+      badge: "최고의 연기 찬사",
+      likes: 38549,
+      commentsCount: 1,
+      date: "2025.11.25",
+      imageUrl: "https://i.postimg.cc/Dwj6t3Sz/10.webp",
+      caption: "청룡의 영광을 안겨주신 천만 관객 여러분들과 정태수를 사랑해 주신 모든 분들께 머리 숙여 감사드립니다. 더 겸손하게 깊이 배우겠습니다.",
+      comments: [
+        { id: "c-off2-1", username: "cinema_mania", text: "태수 악역은 진짜 한국 영화 역사상 최강 소름이었습니다!", time: "3일 전" }
+      ]
+    },
+    {
+      id: "off-3",
+      category: "천만 돌파",
+      title: "영화 《무경계》 (無境界)",
+      subtitle: "정태수 역 핏빛 독전 스틸컷",
+      badge: "천만 관객 신화",
+      likes: 45781,
+      commentsCount: 0,
+      date: "2025.10.12",
+      imageUrl: "https://i.postimg.cc/LXSxV6cp/5.webp",
+      caption: "느와르의 새로운 한 획 《무경계》가 마침내 꿈의 스코어 1,000만을 달성했습니다! 핏빛 연기를 극한으로 선보인 서준 배우 감사패 증정.",
+      comments: []
+    },
+    {
+      id: "off-4",
+      category: "드라마 명작",
+      title: "tvN 드라마 《붉은 달, 그림자》",
+      subtitle: '"서브 영웅, 호위무사 무영"',
+      badge: "신드롬 급 서브남주",
+      likes: 29841,
+      commentsCount: 0,
+      date: "2023.09.04",
+      imageUrl: "https://i.postimg.cc/HkfZVt3Z/2.webp",
+      caption: "서글픈 서브남신의 정석, 무영의 마지막 희생 장면 비하인드 컷입니다. 아직도 수많은 팬들의 가슴을 에이게 하는 처연하고 맹목적인 눈빛!",
+      comments: []
+    },
+    {
+      id: "off-5",
+      category: "뉴스컷 리포트",
+      title: '"늘어난 네이비 니트 스캔들?!"',
+      subtitle: "소속사 측 '강서준의 오랜 애착템일 뿐, 과도한 추측 자제'",
+      badge: "이상형의 재발견",
+      likes: 18240,
+      commentsCount: 0,
+      date: "2026.04.18",
+      imageUrl: "https://i.postimg.cc/KjDrfd6s/14.webp",
+      caption: "강서준 배우의 최애템(네이비 니트)은 늘 완벽하게 리폼된 유니크 디자인으로 팬들의 조공 리스트 상위권에 머물러 있습니다. 😄",
+      comments: []
+    },
+    {
+      id: "off-6",
+      category: "네이버 독점 인터뷰",
+      title: "“츄리닝에 한강 캔맥주가 완벽한 내 이상형”",
+      subtitle: "강서준 친서민 소탈 발언",
+      badge: "이상형 공개 화제",
+      likes: 24719,
+      commentsCount: 0,
+      date: "2025.08.30",
+      imageUrl: "https://i.postimg.cc/mZw58C2B/1.webp",
+      caption: "배우가 직접 참여한 네이버 독점 프로필 스토리입니다. 편안하고 소소한 일상을 함께 걸어가 주는 헌신적인 사랑이 이상향이라고 밝혔습니다.",
+      comments: []
+    }
+  ];
 
     const saved = localStorage.getItem("insta_official_posts");
-    if (saved) {
+    if (saved && !saved.includes("IMG-")) {
       try {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed)) {
@@ -150,33 +150,33 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
     const defaultSecrets = [
       {
         id: "secret-1",
-        imageUrl: "https://i.postimg.cc/CMNQmkLg/11.webp",
-        caption: "매니저 형이나 코디 누나 거 절대 아님 😤 왜 이 다 자란 남자의 거대한 소파 구텡이에 꽁꽁 숨어있는 요 쬐그맣고 수면 양말 한 짝이 내 생명줄 같은지 모르겠네... 얼른 퇴근해라, 양말 주인이여! 🧦❤️ #내사랑 #퇴근시급 #수면양말스캔들",
+        imageUrl: "https://i.postimg.cc/LXSxV6cp/5.webp",
+        caption: "소파 밑에서 네 수면 양말을 찾았다. 🧦 귀여우니까 평생 소장해야지! 얼른 와라❤",
         likes: 12,
         commentsCount: 2,
         date: "2026.05.15",
         comments: [
           { id: "c1-1", username: "{user}", text: "어젯밤 소파에서 발 시리다고 징징대더니 기어코 찾아다 찍었네ㅋㅋㅋ 치워놓으랬지!", time: "10분 전", isUser: true },
-          { id: "c1-2", username: "seojun_2103", text: "절대 못 치워. 이거 소파 붙박이 인테리어야.", time: "8분 전" }
+          { id: "c1-2", username: "seojun_2103", text: "안 빨 거야! 네 향기가 남아 있어야 힘이 난단 말이야. 절대 못 치워! 😤", time: "8분 전" }
         ]
       },
       {
         id: "secret-2",
-        imageUrl: "https://i.postimg.cc/gcDTN8kG/10.webp",
-        caption: "2025년 6월 비 오던 칠흑 같은 밤 🌧️ 소속사 대표님한테 '메소드 연기 리딩 연습' 중이었다고 기사 막히자마자 현민이 형한테 욕을 욕을 바가지로 먹었네... 진짜 나 버리고 나갔을 때 억장 무너졌던 날. 다시는 내 손 놓지 마. 죽어도 안 나줄 테니까.",
+        imageUrl: "https://i.postimg.cc/XJWsg7Tm/8.webp",
+        caption: "가출한 너 잡으려고 빗속에서 질질 짰던 새벽 3시... 다시는 내 손 놓지 마! 🌧❤",
         likes: 45,
         commentsCount: 3,
         date: "2025.06.28",
         comments: [
           { id: "c2-1", username: "{user}", text: "이 흑역사를 또 소환하네.. 동네 시끄럽게 소리 소리 지르고 현관문이 구멍 날 정도로 쳐대서 경찰 신고당할까 봐 열어준 줄 알아라 바보야.", time: "1일 전", isUser: true },
-          { id: "c2-2", username: "seojun_2103", text: "그럼 어떡해, 네가 나 차단하고 번호 바꾸고 짐 다 싸고 나갔잖아. 톱배우고 청룡이고 나발이고 너 없으면 나 껍데기야 껍데기.", time: "18시간 전" },
+          { id: "c2-2", username: "seojun_2103", text: "네가 차단하구 짐 쌌잖아! 너 없으면 난 그냥 연기하는 백수 껍데기야 😭", time: "18시간 전" },
           { id: "c2-3", username: "{user}", text: "그래 알아, 그날부터 우리 튼튼한 자물쇠 새로 맞췄다 아주.", time: "15시간 전", isUser: true }
         ]
       },
       {
         id: "secret-3",
         imageUrl: "https://i.postimg.cc/KjDrfd6s/14.webp",
-        caption: "패션 브랜드 협찬에 수백만 원짜리 명품 에디션이 쌓여있으면 뭐하나. 내 운명의 갑옷은 네가 6년 전 무명 때 첫 피땀 흘린 아르바이트 월급 털어 사줬던 이 네이비 니트뿐인데. 🧶 목이 살짝 늘어나서 소속사 대표님은 기절하시려고 하지만, 평생 수선해주고 꿰매줘야 돼.",
+        caption: "수백만 원 명품보다 6년 전 네가 첫 알바로 사준 낡은 네이비 니트가 소중해 🧶",
         likes: 38,
         commentsCount: 1,
         date: "2026.04.12",
@@ -186,8 +186,8 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
       },
       {
         id: "secret-4",
-        imageUrl: "https://i.postimg.cc/MKG2dFhM/IMG-1.webp",
-        caption: "너랑 한강 돗자리에 쭈그려 누워 캔맥주에 편의점 떡볶이 먹던 그 가을 바람. 내 네이버 공식 프로필 이상형이 왜 '츄리닝에 캔맥주 하나 들고 한강 걷기'로 고정되었는지 세상 사람들은 절대 모른다. 눈앞의 한강 뷰 펜트하우스를 사서 거실 열쇠고리를 바치기까지 먼 길도 너랑 손잡고 캔맥주 홀짝이던 발걸음이 있었네. 사랑한다, 세상에서 가장 따뜻하고 편안한 내 구세주.",
+        imageUrl: "https://i.postimg.cc/mZw58C2B/1.webp",
+        caption: "한강에서 츄리닝 입고 마시는 캔맥주가 평생 이상형인 게 바로 너 때문이야 🍻",
         likes: 56,
         commentsCount: 1,
         date: "2026.02.04",
@@ -198,7 +198,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
     ];
 
     const saved = localStorage.getItem("insta_secret_posts");
-    if (saved) {
+    if (saved && !saved.includes("IMG-")) {
       try {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed)) {
@@ -219,11 +219,23 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
 
   // Save states to localStorage for persistence
   useEffect(() => {
-    localStorage.setItem("insta_secret_posts", JSON.stringify(secretPosts));
+    // Exclude newly posted user comments from localStorage so that comments reset upon reload/re-entrance
+    const cleanSecrets = secretPosts.map((post) => ({
+      ...post,
+      comments: post.comments.filter((c) => !c.isUser),
+      commentsCount: post.comments.filter((c) => !c.isUser).length,
+    }));
+    localStorage.setItem("insta_secret_posts", JSON.stringify(cleanSecrets));
   }, [secretPosts]);
 
   useEffect(() => {
-    localStorage.setItem("insta_official_posts", JSON.stringify(officialPosts));
+    // Exclude newly posted user comments from localStorage so that comments reset upon reload/re-entrance
+    const cleanOfficial = officialPosts.map((post) => ({
+      ...post,
+      comments: post.comments.filter((c) => !c.isUser),
+      commentsCount: post.comments.filter((c) => !c.isUser).length,
+    }));
+    localStorage.setItem("insta_official_posts", JSON.stringify(cleanOfficial));
   }, [officialPosts]);
 
   // Helper inside VirtualInstagram to apply photo edits
@@ -314,7 +326,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
         const fallbackMsg: ChatMessage = {
           id: `fallback-${Date.now()}`,
           role: "model",
-          text: `(자동 응답 메세지... 📴) 자기야 미안, 현민이 형한테 핸드폰 뺏겼어😭😭 얼른 집으로 와서 나 꽉 안아줘. 맥주 차갑게 냉동실 올려놨어!`,
+          text: "미안 자기야! 대본 보는 척하는 중이니까, 얼른 2103호로 와서 같이 놀자! ❤️",
           timestamp: new Date().toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" }),
         };
         setChatMessages((prev) => [...prev, fallbackMsg]);
@@ -327,7 +339,10 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
   const handlePostComment = (postId: string) => {
     if (!newCommentText.trim()) return;
 
-    setSecretPosts((posts) =>
+    const isOfficial = postId.startsWith("off");
+    const updateFn = isOfficial ? setOfficialPosts : setSecretPosts;
+
+    updateFn((posts) =>
       posts.map((post) => {
         if (post.id === postId) {
           const newComment = {
@@ -371,7 +386,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
       <div className="bg-slate-900 text-white py-2 px-4 text-xs font-semibold flex items-center justify-between shadow-md">
         <span className="flex items-center gap-1.5 text-[#03c75a]">
           <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          연애 6년, 동거 3년 차 강서준과 연애 중
+          동거 3년 차 극비 시뮬레이션 모드 작동 중
         </span>
         <button 
           onClick={onBackToPortal}
@@ -589,14 +604,14 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
 
                     <div className="flex justify-center sm:justify-start gap-3 my-2 text-xs font-semibold text-gray-500">
                       <span>게시물 <strong className="text-pink-600">4</strong></span>
-                      <span>팔로워 <strong className="text-pink-600">1</strong></span>
+                      <span>팔로워 <strong className="text-pink-600">1 (자신)</strong></span>
                       <span>팔로잉 <strong className="text-pink-600">1</strong></span>
                     </div>
 
                      {/* Highly intimate secret bio */}
                     <div className="text-xs text-gray-600 leading-relaxed font-semibold">
-                      <p className="text-[#262626] font-bold text-sm">내 사랑 @{"{user}"} 와의 기록</p>
-                      <p className="mt-1">💕 6년째 꽁꽁 숨겨가며 연애 중, 3년째 동거 중.</p>
+                      <p className="text-[#262626] font-bold text-sm">내 우주의 구원자 @{"{user}"} 와의 기록</p>
+                      <p className="mt-1">💕 6년째 꽁꽁 숨겨가며 연애 중, 3년째 2103호 동거 중.</p>
                       <p>🔒 밖에서는 철벽 치지만 네 소파 옆에서는 무한 무장해제 인간.</p>
                     </div>
                   </div>
@@ -724,7 +739,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
                       강서준 (2103호)
                       <span className="text-[9px] text-[#ee2a7b] bg-pink-100 px-1.5 py-0.2 rounded font-bold">실시간 활성화</span>
                     </h3>
-                    <p className="text-[10px] text-emerald-600 font-bold">당신을 엄청 사랑하고 의존하는 중 💖</p>
+                    <p className="text-[10px] text-emerald-600 font-bold">당신을 엄청 짝사랑하고 의존하는 중 💖</p>
                   </div>
                 </div>
 
@@ -956,7 +971,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
                     type="text"
                     value={newCommentText}
                     onChange={(e) => setNewCommentText(e.target.value)}
-                    placeholder="비공개 댓글 달기..."
+                    placeholder="비공개 댓글 달기... (서준이가 대답해줍니다)"
                     className="flex-1 bg-white border border-slate-200 rounded-full px-3 py-1.5 text-xs focus:outline-none focus:border-pink-300 font-semibold"
                     onKeyDown={(e) => e.key === "Enter" && handlePostComment(selectedPost.id)}
                   />
