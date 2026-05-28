@@ -3,13 +3,13 @@ import { Instagram, Search, Award, Calendar, User, Heart, Briefcase, ExternalLin
 import { motion } from "motion/react";
 
 const KANG_SE_JUN_PHOTOS = [
-  "https://i.postimg.cc/LXgy2mKq/IMG-1.webp",
-  "https://i.postimg.cc/9MwxCc5X/IMG-2.webp",
-  "https://i.postimg.cc/qR6m4pVN/IMG-3.webp",
-  "https://i.postimg.cc/MKG2dFhM/IMG-1.webp",
-  "https://i.postimg.cc/7YL8mWpT/IMG-2.webp",
-  "https://i.postimg.cc/SNKFDvwM/IMG-3.webp",
-  "https://i.postimg.cc/DyzkBMtG/IMG-4.webp"
+  "https://i.postimg.cc/Dwj6t3Sz/10.webp",
+  "https://i.postimg.cc/KjDrfd6s/14.webp",
+  "https://i.postimg.cc/XJWsg7Tm/8.webp",
+  "https://i.postimg.cc/mZw58C2B/1.webp",
+  "https://i.postimg.cc/RVx1WQ3Y/11.webp",
+  "https://i.postimg.cc/qMHcNXtZ/12.webp",
+  "https://i.postimg.cc/pXMQmY9q/13.webp"
 ];
 
 interface NaverProfileProps {
