@@ -326,7 +326,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
         const fallbackMsg: ChatMessage = {
           id: `fallback-${Date.now()}`,
           role: "model",
-          text: "미안 자기야! 대본 보는 척하는 중이니까, 얼른 2103호로 와서 같이 놀자! ❤️",
+          text: "미안 자기야! 대본 보는 척하는 중이니까, 얼른 집으로 와서 같이 놀자! ❤️",
           timestamp: new Date().toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" }),
         };
         setChatMessages((prev) => [...prev, fallbackMsg]);
