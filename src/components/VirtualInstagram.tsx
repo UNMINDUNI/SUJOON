@@ -150,7 +150,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
     const defaultSecrets = [
       {
         id: "secret-1",
-        imageUrl: "https://i.postimg.cc/LXSxV6cp/5.webp",
+        imageUrl: "https://i.postimg.cc/5tQfn5Rr/socks.webp",
         caption: "소파 밑에서 네 수면 양말을 찾았다. 🧦 귀여우니까 평생 소장해야지! 얼른 와라❤",
         likes: 12,
         commentsCount: 2,
@@ -162,7 +162,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
       },
       {
         id: "secret-2",
-        imageUrl: "https://i.postimg.cc/XJWsg7Tm/8.webp",
+        imageUrl: "https://i.postimg.cc/vBDfPKsz/rain.webp",
         caption: "가출한 너 잡으려고 빗속에서 질질 짰던 새벽 3시... 다시는 내 손 놓지 마! 🌧❤",
         likes: 45,
         commentsCount: 3,
@@ -186,7 +186,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
       },
       {
         id: "secret-4",
-        imageUrl: "https://i.postimg.cc/mZw58C2B/1.webp",
+        imageUrl: "https://i.postimg.cc/yN37vhbb/beer.webp",
         caption: "한강에서 츄리닝 입고 마시는 캔맥주가 평생 이상형인 게 바로 너 때문이야 🍻",
         likes: 56,
         commentsCount: 1,
