@@ -371,7 +371,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
       <div className="bg-slate-900 text-white py-2 px-4 text-xs font-semibold flex items-center justify-between shadow-md">
         <span className="flex items-center gap-1.5 text-[#03c75a]">
           <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          동거 3년 차 극비 시뮬레이션 모드 작동 중
+          연애 6년, 동거 3년 차 강서준과 연애 중
         </span>
         <button 
           onClick={onBackToPortal}
