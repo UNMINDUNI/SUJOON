@@ -288,7 +288,7 @@ export default function NamuWiki() {
             <div className="mt-4 p-3 bg-emerald-50 rounded border border-emerald-200 text-xs text-emerald-800 leading-relaxed">
               <span className="font-bold">💡 위키 팁!</span>
               <br />
-              본 문서 본문을 꼼꼼히 확인하고 주석 항목의 비밀 설정(동거, 만취 울음, 늘어난 니트의 진실)을 토대로 가상 인스타그램에서 서준에게 퀴즈나 질문을 던져보세요!
+              본 문서 본문을 꼼꼼히 확인하고 주석 항목의 비밀 설정(동거, 만취 울음, 늘어난 니트의 진실)을 찾아보세요
             </div>
           </div>
         </div>
@@ -335,7 +335,7 @@ export default function NamuWiki() {
             <div ref={footnoteRefs.fn5} className="flex gap-2 p-1.5 rounded transition-colors">
               <span className="font-bold text-[#00a29c] shrink-0 font-mono">[5]</span>
               <p>
-                소파 쿠션 옆에 남자 사이즈가 아닌 작은 사이즈의 수면 양말이 포착되어 잠깐 실시간 난리가 났으나, 소속사가 &apos;여성 코디의 것&apos;이라고 빛의 속도로 해명했다. (※ 실체는 2103호에 동거 중인 연인 {"{user}"}의 귀여운 수면 양말)
+                소파 쿠션 옆에 남자 사이즈가 아닌 작은 사이즈의 수면 양말이 포착되어 잠깐 실시간 난리가 났으나, 소속사가 &apos;여성 코디의 것&apos;이라고 빛의 속도로 해명했다. (※ 실체는 동거 중인 연인 {"{user}"}의 귀여운 수면 양말)
               </p>
             </div>
 
