@@ -49,7 +49,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
       likes: 12023,
       commentsCount: 2,
       date: "2026.05.27",
-      imageUrl: "https://i.postimg.cc/gJZfK9gn/S9.webp",
+      imageUrl: "https://i.postimg.cc/pTyRK1F5/IMG-S13.png",
       caption: "오늘 밤 도윤과 은하의 대망의 한강 다리 키스신 방출 예고!! 후끈한 온도의 차이 함께 느껴보실래요? 😉",
       comments: [
         { id: "c-off1-1", username: "dorama_fan", text: "본방사수 갑니다 키스신 벌써 내 도파민 한도초과!!", time: "1시간 전" },
@@ -80,7 +80,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
       likes: 45781,
       commentsCount: 0,
       date: "2025.10.12",
-      imageUrl: "https://i.postimg.cc/3JcF3yKV/S10.webp",
+      imageUrl: "https://i.postimg.cc/PxNT1Fwp/IMG-S12.png",
       caption: "느와르의 새로운 한 획 《무경계》가 마침내 꿈의 스코어 1,000만을 달성했습니다! 핏빛 연기를 극한으로 선보인 서준 배우 감사패 증정.",
       comments: [
        { id: "c-off3-1", username: "juny_fan", text: "악역이 이렇게 섹시해도 됩니까?🥰🥰🥰", time: "6시간 전" },  
@@ -95,7 +95,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
       likes: 29841,
       commentsCount: 0,
       date: "2023.09.04",
-      imageUrl: "https://i.postimg.cc/Hn58HLBg/S11.webp",
+      imageUrl: "https://i.postimg.cc/gJrm3BZ6/IMG-S11.png",
       caption: "서글픈 서브남신의 정석, 무영의 마지막 희생 장면 비하인드 컷입니다. 아직도 수많은 팬들의 가슴을 에이게 하는 처연하고 맹목적인 눈빛!",
       comments: [
         { id: "c-off4-1", username: "seojun_love", text: "이 눈빛으로 어떻게 안넘어가냐 상대역 배우가 대단하다", time: "5일 전" },
