@@ -3,10 +3,10 @@ import { Instagram, Search, Award, Calendar, User, Heart, Briefcase, ExternalLin
 import { motion } from "motion/react";
 
 const KANG_SE_JUN_PHOTOS = [
-  "https://i.postimg.cc/Dwj6t3Sz/10.webp",
-  "https://i.postimg.cc/KjDrfd6s/14.webp",
-  "https://i.postimg.cc/XJWsg7Tm/8.webp",
-  "https://i.postimg.cc/mZw58C2B/1.webp",
+  "https://i.postimg.cc/cC2bPF64/S6.webp",
+  "https://i.postimg.cc/sgpN09zg/S3.webp",
+  "https://i.postimg.cc/gjQT1grd/S7.webp",
+  "https://i.postimg.cc/qqS5W1gr/S5.webp",
   "https://i.postimg.cc/RVx1WQ3Y/11.webp",
   "https://i.postimg.cc/qMHcNXtZ/12.webp",
   "https://i.postimg.cc/pXMQmY9q/13.webp"
