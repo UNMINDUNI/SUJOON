@@ -49,7 +49,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
       likes: 12023,
       commentsCount: 2,
       date: "2026.05.27",
-      imageUrl: "https://i.postimg.cc/XJWsg7Tm/8.webp",
+      imageUrl: "https://i.postimg.cc/gJZfK9gn/S9.webp",
       caption: "오늘 밤 도윤과 은하의 대망의 한강 다리 키스신 방출 예고!! 후끈한 온도의 차이 함께 느껴보실래요? 😉",
       comments: [
         { id: "c-off1-1", username: "dorama_fan", text: "본방사수 갑니다 키스신 벌써 내 도파민 한도초과!!", time: "1시간 전" },
