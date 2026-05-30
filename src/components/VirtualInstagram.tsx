@@ -386,7 +386,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
       <div className="bg-slate-900 text-white py-2 px-4 text-xs font-semibold flex items-center justify-between shadow-md">
         <span className="flex items-center gap-1.5 text-[#03c75a]">
           <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          💕 6년째 꽁꽁 숨겨가며 연애 중, 3년째 동거 중 💕
+          6년째 꽁꽁 숨겨가며 연애 중, 3년째 동거 중 💕
         </span>
         <button 
           onClick={onBackToPortal}
