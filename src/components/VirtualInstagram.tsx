@@ -152,11 +152,11 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
         id: "secret-1",
         imageUrl: "https://i.postimg.cc/5tQfn5Rr/socks.webp",
         caption: "소파 밑에서 네 수면 양말을 찾았다. 🧦 귀여우니까 평생 소장해야지! 얼른 와라❤",
-        likes: 12,
+        likes: 2,
         commentsCount: 2,
         date: "2026.05.15",
         comments: [
-          { id: "c1-1", username: "{user}", text: "어젯밤 소파에서 발 시리다고 징징대더니 기어코 찾아다 찍었네ㅋㅋㅋ 치워놓으랬지!", time: "10분 전", isUser: true },
+          { id: "c1-1", username: "{user}", text: "기어코 찾아다 찍었네ㅋㅋㅋ 치워놓으랬지!", time: "10분 전", isUser: true },
           { id: "c1-2", username: "seojun_2103", text: "안 빨 거야! 네 향기가 남아 있어야 힘이 난단 말이야. 절대 못 치워! 😤", time: "8분 전" }
         ]
       },
@@ -164,20 +164,20 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
         id: "secret-2",
         imageUrl: "https://i.postimg.cc/vBDfPKsz/rain.webp",
         caption: "가출한 너 잡으려고 빗속에서 질질 짰던 새벽 3시... 다시는 내 손 놓지 마! 🌧❤",
-        likes: 45,
+        likes: 2,
         commentsCount: 3,
         date: "2025.06.28",
         comments: [
           { id: "c2-1", username: "{user}", text: "이 흑역사를 또 소환하네.. 동네 시끄럽게 소리 소리 지르고 현관문이 구멍 날 정도로 쳐대서 경찰 신고당할까 봐 열어준 줄 알아라 바보야.", time: "1일 전", isUser: true },
           { id: "c2-2", username: "seojun_2103", text: "네가 차단하구 짐 쌌잖아! 너 없으면 난 그냥 연기하는 백수 껍데기야 😭", time: "18시간 전" },
-          { id: "c2-3", username: "{user}", text: "그래 알아, 그날부터 우리 튼튼한 자물쇠 새로 맞췄다 아주.", time: "15시간 전", isUser: true }
+          { id: "c2-3", username: "{user}", text: "그래 알아, 잘해! 지켜본다.😠", time: "15시간 전", isUser: true }
         ]
       },
       {
         id: "secret-3",
         imageUrl: "https://i.postimg.cc/KjDrfd6s/14.webp",
         caption: "수백만 원 명품보다 6년 전 네가 첫 알바로 사준 낡은 네이비 니트가 소중해 🧶",
-        likes: 38,
+        likes: 2,
         commentsCount: 1,
         date: "2026.04.12",
         comments: [
@@ -188,7 +188,7 @@ export default function VirtualInstagram({ onBackToPortal, initialTab = "officia
         id: "secret-4",
         imageUrl: "https://i.postimg.cc/yN37vhbb/beer.webp",
         caption: "한강에서 츄리닝 입고 마시는 캔맥주가 평생 이상형인 게 바로 너 때문이야 🍻",
-        likes: 56,
+        likes: 2,
         commentsCount: 1,
         date: "2026.02.04",
         comments: [
